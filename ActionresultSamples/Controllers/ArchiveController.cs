@@ -9,6 +9,7 @@ namespace ActionresultSamples.Controllers
     public class ArchiveController : Controller
     {
         // GET: Archive
+        [NonAction]
         public string Entry(DateTime? date)
         {
             return date.ToString();
