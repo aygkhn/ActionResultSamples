@@ -89,15 +89,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Deneme.txt" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ArchiveController.cs" />
+    <Compile Include="Controllers\ContentController.cs" />
+    <Compile Include="Controllers\CustomController.cs" />
+    <Compile Include="Controllers\EmptyController.cs" />
+    <Compile Include="Controllers\FileController.cs" />
+    <Compile Include="Controllers\HttpController.cs" />
+    <Compile Include="Controllers\JavaScriptController.cs" />
+    <Compile Include="Controllers\JsonController.cs" />
+    <Compile Include="Controllers\RedirectController.cs" />
     <Compile Include="Controllers\ViewController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CustomResult.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\XmlResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -106,6 +119,8 @@
     <Content Include="Views\View\Index.cshtml" />
     <Content Include="Views\View\Index2.cshtml" />
     <Content Include="Views\View\Partial.cshtml" />
+    <Content Include="Views\Redirect\Index.cshtml" />
+    <Content Include="Views\JavaScript\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -115,7 +130,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Views\Archive\" />
+    <Folder Include="Views\Content\" />
+    <Folder Include="Views\Custom\" />
+    <Folder Include="Views\Empty\" />
+    <Folder Include="Views\File\" />
+    <Folder Include="Views\http\" />
+    <Folder Include="Views\Json\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

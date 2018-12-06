@@ -9,7 +9,7 @@ namespace ActionresultSamples.Controllers
     public class ViewController : Controller
     {
         // GET: View
-        public ViewResult Index()
+        public ViewResult Index(string id)
         {
             return View();
         }
